@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoService">
+
+    <ImageView
+        android:id="@+id/iconService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/iconService"
+        tools:layout_editor_absoluteX="0dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/descriptionServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameServices"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/urlServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable = "true"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionServices"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0e7ba0"
+        android:text="НАЗАД"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlServices" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
